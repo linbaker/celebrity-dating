@@ -4,14 +4,18 @@ $(document).ready(function(){
     var iceCream = parseInt($("input:radio[name=iceCream]:checked").val());
     var vacation = parseInt($("input:radio[name=vacation]:checked").val());
     var total = add(time, iceCream, vacation);
+    // alert(total)
 
 
     if (total === 3){
-      alert("bob");
+    $(".hideMatch").show();
+    $("#match").text("Bob");
     } else if (total === 9){
-      alert("joe");
+    $(".hideMatch").show();
+    $("#match").text("Joe");
     } else {
-      alert("jill");
+    $(".hideMatch").show();
+    $("#match").text("Jill");
 };
     event.preventDefault();
 
